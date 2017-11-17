@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<script type="text/javascript" src="../jquery.js"></script>
+</head>
+<body>
+	<img id="div_img" src="01.jpeg">
+	<!-- <img src="02.jpeg"> -->
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#div_img").click(function() {
+				var src_value = $("#div_img").attr("src");
+				if(src_value == "01.jpeg") {
+					$("#div_img").attr("src", "02.jpeg");
+				} else {
+					$("#div_img").attr("src", "01.jpeg");
+				}
+			});
+		});
+	</script>
+</body>
+</html>
