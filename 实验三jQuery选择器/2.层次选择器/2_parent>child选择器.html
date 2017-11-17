@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- 父子选择器，父孙不可以 -->
+	<meta charset="utf-8">
+	<title></title>
+	<script type="text/javascript" src="../jquery.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#main > *").css("border","3px solid red");
+		});
+	</script>
+
+	<style type="text/css">
+		body{
+			font-size: 14px;
+		}
+		span#main{
+			display: block;
+			background: yellow;
+			height: 110px;
+		}
+		button{
+			display: block;
+			float: left;
+			margin: 2px;
+			font-size: 14px;
+		}
+		div{
+			width: 90px;
+			height: 90px;
+			margin: 5px;
+			float: left;
+			background: #bbf;
+			font-weight: bold;
+		}
+		div.mini{
+			width: 30px;
+			height: 30px;
+			background: green;
+		}
+	</style>
+
+</head>
+<body>
+	<span id="main">
+		<div></div>
+		<button>Child</button>
+		<div class="mini"></div>
+		<div>
+			<div class="mini"></div>
+			<div class="mini"></div>
+		</div>
+		<div><button>Grand</button></div>
+		<div><span>A Span <em>in</em> child</span></div>
+		<span>A Span in main</span>
+	</span>
+</body>
+</html>
