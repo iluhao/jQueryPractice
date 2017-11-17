@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<script src="../jquery.js"></script>
+</head>
+<body>
+	<a id="a">aa</a><br/>
+	<a id="b">bb</a><br/>
+	<a id="c">cc</a><br/>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("a").click(function(){
+				alert($("a").get(0).innerText);
+			});
+		});
+	</script>
+</body>
+</html>

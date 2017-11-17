@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>each()方法遍历DOM对象</title>
+	<script src="../jquery.js"></script>
+</head>
+<body>
+	<div>BEIJING</div>
+	<span>lebel span</span>
+	<div>SHANGHAI</div>
+	<div>TIANJING</div>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$(document.body).click(function(){
+				$("div").each(function(i){
+					if(this.style.color != "blue") {
+						this.style.color = "blue";
+					} else {
+						this.style.color = "";
+					}
+				});
+			});
+		});
+	</script>
+</body>
+</html>
