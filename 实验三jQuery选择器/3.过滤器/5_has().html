@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<script src="../jquery.js"></script>
+</head>
+<body>
+	<div><p>包含p元素的div标签</p></div>
+	<div>不包含p元素的div标签</div>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("div:has(p)").css("background","red");
+		});
+	</script>
+</body>
+</html>

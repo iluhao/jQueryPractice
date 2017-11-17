@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<script src="../jquery.js"></script>
+</head>
+<body>
+	<ul>
+		<li>北京</li>
+		<li>上海</li>
+		<li>天津</li>
+		<li>重庆</li>
+	</ul>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("ul li:nth-child(even)").css("border", "2px solid red");
+		});
+	</script>
+</body>
+</html>
