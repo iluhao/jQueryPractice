@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<script type="text/javascript" src="../jquery.js"></script>
+</head>
+<body>
+	<input id="change" type="text" name="" value="abc"><br/>
+	<input id="button" type="button" name="" value="toUpperCase">
+
+	<script id="button" type="text/javascript">
+		$(document).ready(function(){
+			$("#button").click(function(){
+				$("#change").val(function(index, oldvalue){
+					return oldvalue.toUpperCase();
+				});
+				// $("#change").val("test");
+			});
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<script type="text/javascript" src="../jquery.js"></script>
+</head>
+<body>
+	<p id="txt">请注意我的变化</p>
+	<input type="button" name="" value="+1s">
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("input:button").click(function(){
+				$("#txt").html("hello jQuery");
+			});
+		});
+	</script>
+</body>
+</html>
