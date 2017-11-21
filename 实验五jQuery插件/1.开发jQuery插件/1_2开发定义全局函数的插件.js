@@ -3,7 +3,7 @@ $.fn.extend({
 		alert(this.html());
 	},
 
-	showtest : function() {
+	showtext : function() {
 		alert(this.text());
 	}
 });
