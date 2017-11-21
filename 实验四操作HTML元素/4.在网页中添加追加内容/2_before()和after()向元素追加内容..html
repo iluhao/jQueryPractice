@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<script type="text/javascript" src="../jquery.js"></script>
+	
+</head>
+<body >
+	<img src="01.jpg" width="300px" height="300px"> <br />
+	<input id="button_before" type="button" name="" value="在前面添加内容">
+	<input id="button_after" type="button" name="" value="在后面添加内容">
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#button_before").click(function(){
+				$("img").before("hello!");
+			});
+		});
+
+		$(document).ready(function(){
+			$("#button_after").click(function(){
+				$("img").after("hello!");
+			});
+		});
+	</script>
+</body>
+</html>
