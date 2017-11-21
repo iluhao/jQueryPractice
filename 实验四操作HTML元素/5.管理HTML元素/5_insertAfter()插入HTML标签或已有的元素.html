@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>insertAfter()</title>
+	<script type="text/javascript" src="../jquery.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#button_insert").click(function(){
+				$("<span>insert </span>").insertAfter(".inner");
+				// $("<p>insert</p>").insertafter(".inner");
+			});
+		});
+	</script>
+</head>
+<body>
+	<div class="container">
+		<div class="inner">Hello</div>
+		<div class="inner">Goodbuy</div>
+	</div>
+	<input id="button_insert" type="button" name="" value="insert">
+</body>
+</html>

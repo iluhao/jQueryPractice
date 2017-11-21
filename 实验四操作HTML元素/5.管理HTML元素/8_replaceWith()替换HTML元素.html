@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>replaceWith()</title>
+	<script type="text/javascript" src="../jquery.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("input").click(function(){
+				$(this).replaceWith("<div>" + $(this).val() + "</div>") ;
+			});
+		});
+	</script>
+	<style type="text/css">
+		input{
+			width: 100px;
+		}
+	</style>
+</head>
+<body>
+	<input type="button" name="" value="First">
+	<input type="button" name="" value="Second">
+	<input type="button" name="" value="Third">
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<script type="text/javascript" src="../jquery.js"></script>
+</head>
+<body>
+	<table id="table_infor" border="1px">
+		<tr>
+			<th>ID</th>
+			<th>姓名</th>
+			<th>性别</th>
+			<th>年龄</th>
+			<th>学历</th>
+		</tr>
+
+		<tr>
+			<td>001</td>
+			<td>张三</td>
+			<td>女</td>
+			<td>29</td>
+			<td>大专</td>
+		</tr>
+
+		<tr>
+			<td>002</td>
+			<td>李四</td>
+			<td>男</td>
+			<td>30</td>
+			<td>中专</td>
+		</tr>
+
+		<tr>
+			<td>003</td>
+			<td>王五</td>
+			<td id="test">女</td>
+			<td>25</td>
+			<td>本科</td>
+		</tr>
+	</table>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			var trs = $("#table_infor").find("tr");
+			for(var i = 0; i < trs.length; i++) {
+				var td = $(trs[i]).find('td:nth-child(3)');
+				if(td.html() == '男') {
+					td.html("boy")
+				} else if($(td).html() == "女") {
+					$(td).html("girl");
+				}
+			}
+		});
+	</script>
+
+</body>
+</html>
