@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript" src="../jquery.js"></script>
+	<script type="text/javascript" src="../1.开发jQuery插件/2_开发定义全局函数的插件.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#button").click(function(){
+				$("#button").val("1+2 = "+jQuery.add(1,2));
+				alert($("#button").html());
+			});
+		});
+	</script>
+</head>
+<body>
+	<input id="button" type="button" name="" value="点击我">
+</body>
+</html>
