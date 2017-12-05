@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<script type="text/javascript" src="../jquery.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#userName").focus(function(){
+				$("#userName").css("border", "2px solid red")
+			});
+			$("#userName").blur(function(){
+				$("#userName").css("border", "2px dotted black")
+			});
+		});
+	</script>
+</head>
+<body>
+	请输入用户名:<input id="userName" type="text" name="">
+</body>
+</html>

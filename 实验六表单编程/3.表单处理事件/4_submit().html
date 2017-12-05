@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<script type="text/javascript" src="../jquery.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#target").submit(function() {
+				if($("#name").val() == "") {
+					alert("请输出入内容!");
+					return false;
+				}
+				return true;
+			});
+		});
+	</script>
+</head>
+<body>
+	<form id="target" action="do.asp">
+		<input id="name" type="text" name="name" value="">
+		<input type="submit" name="" value="提交">
+	</form>
+</body>
+</html>
