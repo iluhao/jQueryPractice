@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<script type="text/javascript" src="../jquery.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#buttonInfo").click(function(){
+				alert("st")
+				var info = $("textArea").getSelection();
+				alert("Start: " + info.start + "\nEnd: " + info.end + "\nLength: " + 
+						info.length + "\nText: " + info.text);		
+			});
+		});
+		
+	</script>
+</head>
+<body>
+		
+	<textarea id="textArea" rows="10" cols="60"></textarea><br />
+	获取所得的内容<button id="buttonInfo" type="button">获得</button>
+
+</body>
+</html>

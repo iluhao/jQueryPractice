@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<script type="text/javascript" src="../jquery.js"></script>
+	<script type="text/javascript" src="jquery.doubleSelect.js"></script>
+	<script type="text/javascript">
+		 $(document).ready(function() {
+    	    var selectoptions = {
+	    	     "Fruits": {
+	                 "key" : 10,
+	                 "defaultvalue" : 212,
+	                 "values" : {
+	                     "apple": 210,
+	                     "orange": 211,
+	                     "kiwi": 212,
+	                     "melon": 213
+	                }
+	            },
+
+	    	    "Vegetables": {
+	    	        "key" : 20,
+	                "defaultvalue" : 112,
+	    	        "values" : {
+	                     "tomato": 110,
+	                     "potato": 111,
+	                     "asparagus": 112
+	                }
+	            }
+	           
+	    	};
+	    	$('#first').doubleSelect('second', selectoptions);    
+     	});		   
+
+	</script>
+</head>
+<body>
+	<select id="first" size="1"><option value="">--</option>></select>
+	<select id="second"><option value="">--</option></select>
+</body>
+</html>
