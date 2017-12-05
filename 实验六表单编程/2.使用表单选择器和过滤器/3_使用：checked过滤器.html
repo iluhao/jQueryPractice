@@ -1,0 +1,34 @@
+<!-- :checken 匹配表单中所有被选中的元素（复选框或单选按钮） -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript" src="../jquery.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			function countChecked() {
+				var n = $("input:checked").length;
+				$("div").text(n + (n <= 1 ? "is" : "are") + "checked!");
+			}
+			countChecked();
+			$(":checkbox").click(countChecked);
+		});
+
+	</script>
+	<style type="text/css">
+		div{
+			color: red;
+		}
+	</style>
+</head>
+<body>
+	<form>	
+		<input type="checkbox" name="newsletter" checked="checked" value="Hourly">
+		<input type="checkbox" name="newsletter" value="Daily">
+		<input type="checkbox" name="newsletter" value="Weekly">
+		<input type="checkbox" name="newsletter" checked="checked" value="Monthly">
+		<input type="checkbox" name="newsletter" value="Yearly">
+	</form>
+	<div></div>
+</body>
+</html>

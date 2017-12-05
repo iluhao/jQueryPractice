@@ -1,0 +1,36 @@
+<!-- :input -->
+<!-- 匹配表单中所有input元素，textarea元素，select元素，button元素 -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript" src="../jquery.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			var allInput = $(":input");
+			var formChild = $("form > *");
+			$("#message").text("找到" + allInput.length + "个input类型元素");
+			$(":input").css("border", "2px solid red");
+		});
+	</script>
+</head>
+<body>
+	<form>
+		<input type="button" name="" value="input button"> <br />
+ 		<input type="checkbox" name=""> <br />
+		<input type="file" name=""> <br />
+		<input type="hidden" name=""> <br />
+		<input type="image" name=""> <br />
+		<input type="password" name=""> <br />
+		<input type="radio" name=""> <br />
+		<input type="reset" name=""> <br />
+		<input type="submit" name=""> <br />
+		<input type="text" name=""> <br />
+		<select><option>Option</option></select> <br />
+		<button>Button</button> <br />
+	</form>
+	<div id="message">
+		
+	</div>
+</body>
+</html>

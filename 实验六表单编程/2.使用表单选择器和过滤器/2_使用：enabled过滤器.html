@@ -1,0 +1,17 @@
+<!-- 匹配表单中所有启用的元素 -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript" src="../jquery.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("input:enabled").css("border", "2px solid red")
+		});
+	</script>
+</head>
+<body>
+	<input type="email" name="" disabled="disabled">
+	<input type="" name="id">
+</body>
+</html>
